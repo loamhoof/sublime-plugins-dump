@@ -18,4 +18,7 @@
 	// Surround Title
 	{ "keys": ["ctrl+shift+keypad_multiply"], "command": "surround_title"},
 	{ "keys": ["ctrl+alt+shift+keypad_multiply"], "command": "surround_title_panel"},
+	// Group Navigation
+	{ "keys": ["ctrl+tab"], "command": "change_view_in_group" },
+	{ "keys": ["ctrl+shift+tab"], "command": "change_view_in_group", "args": { "step": -1 } },
 ]
