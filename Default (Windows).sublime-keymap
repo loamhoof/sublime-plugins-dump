@@ -13,4 +13,6 @@
 	// Number
 	{ "keys": ["super+keypad_minus"], "command": "number"},
 	{ "keys": ["super+alt+keypad_minus"], "command": "number_panel"},
+	// Sum
+	{ "keys": ["ctrl+="], "command": "sum" },
 ]
