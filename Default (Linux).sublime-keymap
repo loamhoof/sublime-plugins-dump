@@ -1,3 +1,7 @@
 [
-	{ "keys": ["f2"], "command": "rename_file" }
+	// Rename File
+	{ "keys": ["f2"], "command": "rename_file" },
+	// Dashline
+	{ "keys": ["ctrl+shift+keypad_minus"], "command": "dash_line"},
+	{ "keys": ["ctrl+alt+shift+keypad_minus"], "command": "dash_line_panel"},
 ]
