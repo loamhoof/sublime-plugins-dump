@@ -10,4 +10,7 @@
 	// Jump To Title
 	{ "keys": ["ctrl+t"], "command": "jump_to_title"},
 	{ "keys": ["ctrl+alt+t"], "command": "transpose"},
+	// Number
+	{ "keys": ["super+keypad_minus"], "command": "number"},
+	{ "keys": ["super+alt+keypad_minus"], "command": "number_panel"},
 ]
