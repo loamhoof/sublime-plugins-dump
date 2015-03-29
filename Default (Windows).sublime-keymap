@@ -4,6 +4,9 @@
 	// Dashline
 	{ "keys": ["ctrl+shift+keypad_minus"], "command": "dash_line"},
 	{ "keys": ["ctrl+alt+shift+keypad_minus"], "command": "dash_line_panel"},
+	// Surround Title
+	{ "keys": ["ctrl+shift+keypad_multiply"], "command": "surround_title"},
+	{ "keys": ["ctrl+alt+shift+keypad_multiply"], "command": "surround_title_panel"},
 	// Find Over Expand
 	{ "keys": ["ctrl+shift+d"], "command": "find_over_expand" },
 	{ "keys": ["ctrl+alt+d"], "command": "duplicate_line" },
@@ -15,9 +18,6 @@
 	{ "keys": ["super+alt+keypad_minus"], "command": "number_panel"},
 	// Sum
 	{ "keys": ["ctrl+="], "command": "sum" },
-	// Surround Title
-	{ "keys": ["ctrl+shift+keypad_multiply"], "command": "surround_title"},
-	{ "keys": ["ctrl+alt+shift+keypad_multiply"], "command": "surround_title_panel"},
 	// Group Navigation
 	{ "keys": ["ctrl+tab"], "command": "change_view_in_group" },
 	{ "keys": ["ctrl+shift+tab"], "command": "change_view_in_group", "args": { "step": -1 } },
