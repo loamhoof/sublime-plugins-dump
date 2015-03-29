@@ -7,4 +7,7 @@
 	// Find Over Expand
 	{ "keys": ["ctrl+shift+d"], "command": "find_over_expand" },
 	{ "keys": ["ctrl+alt+d"], "command": "duplicate_line" },
+	// Jump To Title
+	{ "keys": ["ctrl+t"], "command": "jump_to_title"},
+	{ "keys": ["ctrl+alt+t"], "command": "transpose"},
 ]
