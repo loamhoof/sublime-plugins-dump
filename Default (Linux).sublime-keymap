@@ -4,4 +4,7 @@
 	// Dashline
 	{ "keys": ["ctrl+shift+keypad_minus"], "command": "dash_line"},
 	{ "keys": ["ctrl+alt+shift+keypad_minus"], "command": "dash_line_panel"},
+	// Find Over Expand
+	{ "keys": ["ctrl+shift+d"], "command": "find_over_expand" },
+	{ "keys": ["ctrl+alt+d"], "command": "duplicate_line" },
 ]
