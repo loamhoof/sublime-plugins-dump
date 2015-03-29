@@ -15,4 +15,7 @@
 	{ "keys": ["super+alt+keypad_minus"], "command": "number_panel"},
 	// Sum
 	{ "keys": ["ctrl+="], "command": "sum" },
+	// Surround Title
+	{ "keys": ["ctrl+shift+keypad_multiply"], "command": "surround_title"},
+	{ "keys": ["ctrl+alt+shift+keypad_multiply"], "command": "surround_title_panel"},
 ]
