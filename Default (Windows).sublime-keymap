@@ -7,12 +7,12 @@
 	// Surround Title
 	{ "keys": ["ctrl+shift+keypad_multiply"], "command": "surround_title"},
 	{ "keys": ["ctrl+alt+shift+keypad_multiply"], "command": "surround_title_panel"},
-	// Find Over Expand
-	{ "keys": ["ctrl+shift+d"], "command": "find_over_expand" },
-	{ "keys": ["ctrl+alt+d"], "command": "duplicate_line" },
 	// Jump To Title
 	{ "keys": ["ctrl+t"], "command": "jump_to_title"},
 	{ "keys": ["ctrl+alt+t"], "command": "transpose"},
+	// Find Over Expand
+	{ "keys": ["ctrl+shift+d"], "command": "find_over_expand" },
+	{ "keys": ["ctrl+alt+d"], "command": "duplicate_line" },
 	// Number
 	{ "keys": ["super+keypad_minus"], "command": "number"},
 	{ "keys": ["super+alt+keypad_minus"], "command": "number_panel"},
