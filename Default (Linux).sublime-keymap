@@ -21,4 +21,6 @@
 	// Group Navigation
 	{ "keys": ["ctrl+tab"], "command": "change_view_in_group" },
 	{ "keys": ["ctrl+shift+tab"], "command": "change_view_in_group", "args": { "step": -1 } },
+	// Unwrap
+	{ "keys": ["ctrl+alt+m"], "command": "unwrap"},
 ]

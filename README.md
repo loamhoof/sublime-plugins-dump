@@ -29,3 +29,6 @@ Bind `ctrl+=` to display the sum of the selected numbers.
 
 ## Group Navigation
 Bind `ctrl+tab` and `ctrl+shift+tab` to navigate logically between the tabs of a group.
+
+## Unwrap
+Bind `ctrl+alt+m` to unwrap the selection.
