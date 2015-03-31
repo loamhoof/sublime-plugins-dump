@@ -32,3 +32,8 @@ Bind `ctrl+tab` and `ctrl+shift+tab` to navigate logically between the tabs of a
 
 ## Unwrap
 Bind `ctrl+alt+m` to unwrap the selection.
+
+## Duplicate File
+Add a "Duplicate File" option to the context menu.
+The name of the copy will be the name of the original file, followed by an underscore and the timestamp.
+If the targeted file is a symlink, the copy will not be one.

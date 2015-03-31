@@ -1,0 +1,9 @@
+[
+	{
+		"caption": "Duplicate File",
+		"command": "duplicate_file",
+		"args": {
+			"paths": []
+		}
+	},
+]
