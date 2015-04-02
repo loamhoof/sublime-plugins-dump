@@ -4,6 +4,11 @@ from sublime import Region
 class FindOverExpand(sublime_plugin.TextCommand):
     def run(self, _):
         selected_regions = [region for region in self.view.sel()]
+
+        if len(selected_regions) == 1 and selected_regions[0].empty():
+            self.view.window().run_command("find_under_expand")
+            return
+
         text_to_find = self.view.substr(selected_regions[0])
         text_to_search_in = self.view.substr(Region(0, selected_regions[0].begin()))
 
