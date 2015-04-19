@@ -9,7 +9,6 @@ class DuplicateFile(sublime_plugin.ApplicationCommand):
         file_name, file_ext = os.path.splitext(file_)
         copy = "%s_%d%s" % (file_name, int(time.time()), file_ext)
         shutil.copy2(file_, copy)
-        print(os.path.basename(copy))
         sublime.active_window().open_file(os.path.basename(copy))
 
     @staticmethod
