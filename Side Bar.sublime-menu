@@ -6,4 +6,11 @@
 			"paths": []
 		}
 	},
+	{
+		"caption": "New Python Module",
+		"command": "new_python_module",
+		"args": {
+			"paths": []
+		}
+	}
 ]
