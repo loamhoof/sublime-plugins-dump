@@ -10,11 +10,14 @@ class SurroundTitle(sublime_plugin.TextCommand):
 		sel = self.view.sel()
 
 		for region in sel:
-			line = self.view.line(region)
-			chars = char * ((line.b - line.a) + 4)
-			to_insert = " " + char + "\n" + chars
-			self.view.insert(edit, line.b, to_insert)
-			self.view.insert(edit, line.a, to_insert[::-1])
+			lines = self.view.lines(region)
+			max_size = max(line.size() for line in lines)
+			chars = char * (max_size + 4)
+			self.view.insert(edit, lines[-1].end(), "\n" + chars)
+			for line in lines[::-1]:
+				self.view.insert(edit, line.end(), (max_size - line.size() + 1) * " " + char)
+				self.view.insert(edit, line.begin(), char + " ")
+			self.view.insert(edit, lines[0].begin(), chars + "\n")
 
 
 class SurroundTitlePanel(sublime_plugin.TextCommand):
