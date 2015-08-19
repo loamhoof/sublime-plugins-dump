@@ -23,4 +23,6 @@
 	{ "keys": ["ctrl+shift+tab"], "command": "change_view_in_group", "args": { "step": -1 } },
 	// Unwrap
 	{ "keys": ["ctrl+alt+m"], "command": "unwrap"},
+	// To CamelCase
+	{ "keys": ["ctrl+k", "ctrl+c"], "command": "to_camel_case" },
 ]
