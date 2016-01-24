@@ -1,4 +1,4 @@
-from os import path
+from os import mkdir, path
 import subprocess
 from tempfile import TemporaryFile
 from contextlib import closing
@@ -7,7 +7,11 @@ import sublime_plugin
 from sublime import Region
 
 
-JQ_PATH = path.join(path.dirname(path.realpath(__file__)), 'jq-linux64')
+PLUGIN_DIR = path.dirname(path.realpath(__file__))
+BIN_PATH = path.join(PLUGIN_DIR, 'jq-linux64')
+STATES_DIR = path.join(PLUGIN_DIR, 'jq-states')
+STATE_FILE = path.join(STATES_DIR, 'saved-state')
+
 history = []
 history_index = None
 current_input = None
@@ -23,7 +27,7 @@ class Jq(sublime_plugin.TextCommand):
             jq_input = self.view.substr(whole_file).encode('utf-8')
             tmp_file.write(jq_input)
             tmp_file.seek(0)
-            jq_output = subprocess.check_output([JQ_PATH, history[-1]], stdin=tmp_file)
+            jq_output = subprocess.check_output([BIN_PATH, history[-1]], stdin=tmp_file)
         self.view.replace(edit, whole_file, jq_output.decode('utf-8'))
 
 
@@ -65,3 +69,22 @@ class JqHistory(sublime_plugin.TextCommand):
         region_to_replace = Region(0, self.view.size())
 
         self.view.replace(edit, region_to_replace, ([current_input] + history)[-history_index])
+
+
+class JqSaveState(sublime_plugin.TextCommand):
+    def run(self, _):
+        with open(STATE_FILE, mode='w') as saved_state_file:
+            to_save = self.view.substr(Region(0, self.view.size()))
+            saved_state_file.write(to_save)
+
+
+class JqLoadState(sublime_plugin.TextCommand):
+    def run(self, edit):
+        with open(STATE_FILE, mode='r') as saved_state_file:
+            self.view.replace(edit, Region(0, self.view.size()), saved_state_file.read())
+
+
+try:
+    mkdir(STATES_DIR)
+except FileExistsError:
+    pass
