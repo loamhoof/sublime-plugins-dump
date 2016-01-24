@@ -25,4 +25,22 @@
 	{ "keys": ["ctrl+alt+m"], "command": "unwrap"},
 	// To CamelCase
 	{ "keys": ["ctrl+k", "ctrl+c"], "command": "to_camel_case" },
+	// JQ
+	{
+		"keys": ["up"], "command": "jq_history",
+		"args": {
+			"backwards": true
+		},
+		"context":
+		[
+			{ "key": "setting.JqInputPanel", "operator": "equal", "operand": true }
+		]
+	},
+	{
+		"keys": ["down"], "command": "jq_history",
+		"context":
+		[
+			{ "key": "setting.JqInputPanel", "operator": "equal", "operand": true }
+		]
+	},
 ]
