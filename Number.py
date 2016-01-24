@@ -41,5 +41,4 @@ class NumberPanel(sublime_plugin.TextCommand):
         )
 
     def on_done(self, start_from, addendum):
-        print(addendum)
         self.view.run_command("number", {"addendum": addendum, "start_from": int(start_from)})
