@@ -37,3 +37,9 @@ Bind `ctrl+alt+m` to unwrap the selection.
 Add a "Duplicate File" option to the context menu.
 The name of the copy will be the name of the original file, followed by an underscore and the timestamp.
 If the targeted file is a symlink, the copy will not be one.
+
+## Close Views In Group
+Bind `ctrl+shift+f4` to close all views in the active group.
+
+## Close Views In Window
+Bind `shift+f4` to close all views in the active window.

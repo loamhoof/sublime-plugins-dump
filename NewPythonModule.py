@@ -21,7 +21,7 @@ class NewPythonModule(sublime_plugin.ApplicationCommand):
         os.makedirs(new_dir)
 
         self.create_file(new_dir, "__init__.py")
-        self.create_file(new_dir, "abc.py")
+        # self.create_file(new_dir, "abc.py")
 
     @staticmethod
     def create_file(folder_path, file_name):

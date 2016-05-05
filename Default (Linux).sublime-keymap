@@ -43,4 +43,7 @@
 			{ "key": "setting.JqInputPanel", "operator": "equal", "operand": true }
 		]
 	},
+	// Batch view closing
+	{ "keys": ["ctrl+shift+f4"], "command": "close_views_in_group" },
+	{ "keys": ["shift+f4"], "command": "close_views_in_window" },
 ]
