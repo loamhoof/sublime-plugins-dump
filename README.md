@@ -38,8 +38,8 @@ Add a "Duplicate File" option to the context menu.
 The name of the copy will be the name of the original file, followed by an underscore and the timestamp.
 If the targeted file is a symlink, the copy will not be one.
 
-## Close Views In Group
-Bind `ctrl+shift+f4` to close all views in the active group.
-
-## Close Views In Window
-Bind `shift+f4` to close all views in the active window.
+## Close Views
+Bind `ctrl+shift+f4` to close all views in the active group but the active one.
+Bind `ctrl+k, ctrl+f4` to close all views in the active group.
+Bind `ctrl+k, shift+f4` to close all views in the active window but the active one.
+Bind `ctrl+k, ctrl+shift+f4` to close all views in the active window.

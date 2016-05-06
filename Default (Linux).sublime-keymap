@@ -44,6 +44,8 @@
 		]
 	},
 	// Batch view closing
-	{ "keys": ["ctrl+shift+f4"], "command": "close_views_in_group" },
-	{ "keys": ["shift+f4"], "command": "close_views_in_window" },
+	{ "keys": ["ctrl+shift+f4"], "command": "close_views_in_group", "args": { "close_active": false } },
+	{ "keys": ["ctrl+k", "ctrl+f4"], "command": "close_views_in_group" },
+	{ "keys": ["ctrl+k", "shift+f4"], "command": "close_views_in_window", "args": { "close_active": false } },
+	{ "keys": ["ctrl+k", "ctrl+shift+f4"], "command": "close_views_in_window" },
 ]
