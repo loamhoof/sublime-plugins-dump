@@ -43,3 +43,6 @@ Bind `ctrl+shift+f4` to close all views in the active group but the active one.
 Bind `ctrl+k, ctrl+f4` to close all views in the active group.
 Bind `ctrl+k, shift+f4` to close all views in the active window but the active one.
 Bind `ctrl+k, ctrl+shift+f4` to close all views in the active window.
+
+# Split Line
+Bind `alt+enter` to split a line. If the selection is a point, the text on the right part of the cursor is sent to a new line above. Otherwise, the selected region is sent.

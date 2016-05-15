@@ -48,4 +48,6 @@
 	{ "keys": ["ctrl+k", "ctrl+f4"], "command": "close_views_in_group" },
 	{ "keys": ["ctrl+k", "shift+f4"], "command": "close_views_in_window", "args": { "close_active": false } },
 	{ "keys": ["ctrl+k", "ctrl+shift+f4"], "command": "close_views_in_window" },
+	// Line splitting
+	{ "keys": ["alt+enter"], "command": "split_line" },
 ]
