@@ -82,6 +82,7 @@ class JqLoadState(sublime_plugin.TextCommand):
     def run(self, edit):
         with open(STATE_FILE, mode='r') as saved_state_file:
             self.view.replace(edit, Region(0, self.view.size()), saved_state_file.read())
+        self.view.run_command('set_file_type', {'syntax': 'Packages/JavaScript/JSON.sublime-syntax'})
 
 
 try:
