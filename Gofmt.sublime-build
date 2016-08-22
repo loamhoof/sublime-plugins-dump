@@ -1,0 +1,3 @@
+{
+    "shell_cmd": "gofmt -w ${file}"
+}

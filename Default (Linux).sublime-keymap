@@ -50,4 +50,6 @@
 	{ "keys": ["ctrl+k", "ctrl+shift+f4"], "command": "close_views_in_window" },
 	// Line splitting
 	{ "keys": ["alt+enter"], "command": "split_line" },
+	// Go to pointer
+	{ "keys": ["ctrl+k", "ctrl+x"], "command": "go_to_pointer" },
 ]

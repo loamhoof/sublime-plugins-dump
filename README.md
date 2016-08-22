@@ -44,5 +44,11 @@ Bind `ctrl+k, ctrl+f4` to close all views in the active group.
 Bind `ctrl+k, shift+f4` to close all views in the active window but the active one.
 Bind `ctrl+k, ctrl+shift+f4` to close all views in the active window.
 
-# Split Line
+## Split Line
 Bind `alt+enter` to split a line. If the selection is a point, the text on the right part of the cursor is sent to a new line above. Otherwise, the selected region is sent.
+
+## Go fmt on save
+Add an event plugin to run `go fmt` when saving golang files.
+
+## Go go pointer
+Bind `ctrl+k, ctrl+x` to mimic the ctrl+xx functionality of bash.
