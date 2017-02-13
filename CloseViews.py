@@ -18,3 +18,4 @@ class CloseViewsInWindow(sublime_plugin.WindowCommand):
             if close_active is True or view.id() != active_view.id():
                 self.window.focus_view(view)
                 self.window.run_command('close_file')
+        self.window.focus_group(0)

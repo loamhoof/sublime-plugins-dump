@@ -50,5 +50,8 @@ Bind `alt+enter` to split a line. If the selection is a point, the text on the r
 ## Go fmt on save
 Add an event plugin to run `go fmt` when saving golang files.
 
-## Go go pointer
+## Go to pointer
 Bind `ctrl+k, ctrl+x` to mimic the ctrl+xx functionality of bash.
+
+## Copy to
+Bind `ctrl+shift+c` to copy to EOL, `ctrl+k, ctrl+shift+c` to copy to BOL.

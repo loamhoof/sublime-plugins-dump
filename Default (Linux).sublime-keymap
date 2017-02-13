@@ -52,4 +52,7 @@
 	{ "keys": ["alt+enter"], "command": "split_line" },
 	// Go to pointer
 	{ "keys": ["ctrl+k", "ctrl+x"], "command": "go_to_pointer" },
+	// Copy to
+	{ "keys": ["ctrl+shift+c"], "command": "copy_to" },
+	{ "keys": ["ctrl+k", "ctrl+shift+c"], "command": "copy_to", "args": { "forward": false } },
 ]
