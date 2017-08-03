@@ -55,4 +55,6 @@
 	// Copy to
 	{ "keys": ["ctrl+shift+c"], "command": "copy_to" },
 	{ "keys": ["ctrl+k", "ctrl+shift+c"], "command": "copy_to", "args": { "forward": false } },
+	{ "keys": ["ctrl+shift+x"], "command": "copy_to", "args": { "cut": true } },
+	{ "keys": ["ctrl+k", "ctrl+shift+x"], "command": "copy_to", "args": { "forward": false, "cut": true } },
 ]

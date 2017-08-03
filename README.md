@@ -55,3 +55,4 @@ Bind `ctrl+k, ctrl+x` to mimic the ctrl+xx functionality of bash.
 
 ## Copy to
 Bind `ctrl+shift+c` to copy to EOL, `ctrl+k, ctrl+shift+c` to copy to BOL.
+Bind `ctrl+shift+x` to cut to EOL, `ctrl+k, ctrl+shift+x` to cut to BOL.
