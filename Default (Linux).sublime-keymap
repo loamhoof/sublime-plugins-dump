@@ -57,4 +57,10 @@
 	{ "keys": ["ctrl+k", "ctrl+shift+c"], "command": "copy_to", "args": { "forward": false } },
 	{ "keys": ["ctrl+shift+x"], "command": "copy_to", "args": { "cut": true } },
 	{ "keys": ["ctrl+k", "ctrl+shift+x"], "command": "copy_to", "args": { "forward": false, "cut": true } },
+	// Reverse single selection
+	{ "keys": ["shift+escape"], "command": "reverse_single_selection", "context":
+		[
+			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
+		]
+	},
 ]

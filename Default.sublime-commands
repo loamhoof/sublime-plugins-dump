@@ -1,5 +1,6 @@
 [
 	{ "caption": "JQ: Run command", "command": "jq_panel" },
 	{ "caption": "JQ: Save state", "command": "jq_save_state" },
-	{ "caption": "JQ: Load state", "command": "jq_load_state" }
+	{ "caption": "JQ: Load state", "command": "jq_load_state" },
+	{ "caption": "Gist", "command": "select_gist" },
 ]
