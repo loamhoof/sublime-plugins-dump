@@ -1,0 +1,24 @@
+version: '3'
+services:
+  {{service_name}}:
+    container_name: {{container_name}}
+    image: {{image}}
+    ports:
+      - {{src}}:{{dest}}
+    volumes:
+      - {{src}}:{{dest}}
+    environment:
+      {{key}}: {{value}}
+    command:
+      - ...
+    entrypoint:
+      - ...
+    networks:
+      {{network_name}}:
+        ipv4_address: {{ip_address}}
+
+networks:
+  {{network_name}}:
+    ipam:
+      config:
+        - subnet: {{subnet:172.27.0.0/16}}

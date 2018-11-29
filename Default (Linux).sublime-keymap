@@ -63,4 +63,8 @@
 			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
 		]
 	},
+	// Show Folder Path
+	{ "keys": ["shift+f2"], "command": "show_folder" },
+	// Go To EOF
+	{ "keys": ["ctrl+shift+g"], "command": "go_to_eof"},
 ]

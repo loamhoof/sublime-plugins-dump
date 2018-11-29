@@ -7,3 +7,5 @@ class ReverseSingleSelection(sublime_plugin.TextCommand):
 
         self.view.sel().clear()
         self.view.sel().add(last_selection)
+
+        self.view.show_at_center(last_selection)

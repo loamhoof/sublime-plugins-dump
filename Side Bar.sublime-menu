@@ -1,16 +1,16 @@
 [
-	{
-		"caption": "Duplicate File",
-		"command": "duplicate_file",
-		"args": {
-			"paths": []
-		}
-	},
-	{
-		"caption": "New Python Module",
-		"command": "new_python_module",
-		"args": {
-			"paths": []
-		}
-	}
+	// {
+	// 	"caption": "Duplicate File",
+	// 	"command": "duplicate_file",
+	// 	"args": {
+	// 		"paths": []
+	// 	}
+	// },
+	// {
+	// 	"caption": "New Python Module",
+	// 	"command": "new_python_module",
+	// 	"args": {
+	// 		"paths": []
+	// 	}
+	// }
 ]

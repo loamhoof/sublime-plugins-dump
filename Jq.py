@@ -1,16 +1,16 @@
-from os import mkdir, path
-import subprocess
-from tempfile import TemporaryFile
 from contextlib import closing
+import os.path
+import subprocess
+import tempfile
 
 import sublime_plugin
 from sublime import Region
 
 
-PLUGIN_DIR = path.dirname(path.realpath(__file__))
-BIN_PATH = path.join(PLUGIN_DIR, 'jq-linux64')
-STATES_DIR = path.join(PLUGIN_DIR, 'jq-states')
-STATE_FILE = path.join(STATES_DIR, 'saved-state')
+PLUGIN_DIR = os.path.dirname(os.path.realpath(__file__))
+BIN_PATH = os.path.join(PLUGIN_DIR, 'jq-linux64')
+STATES_DIR = os.path.join(PLUGIN_DIR, 'jq-states')
+STATE_FILE = os.path.join(STATES_DIR, 'saved-state')
 
 history = []
 history_index = None
@@ -21,7 +21,7 @@ default_command = "."
 
 class Jq(sublime_plugin.TextCommand):
     def run(self, edit):
-        tmp_file = TemporaryFile()
+        tmp_file = tempfile.TemporaryFile()
         whole_file = Region(0, self.view.size())
         with closing(tmp_file):
             jq_input = self.view.substr(whole_file).encode('utf-8')
@@ -86,6 +86,6 @@ class JqLoadState(sublime_plugin.TextCommand):
 
 
 try:
-    mkdir(STATES_DIR)
+    os.mkdir(STATES_DIR)
 except FileExistsError:
     pass

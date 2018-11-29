@@ -1,0 +1,5 @@
+import component from './set.component';
+
+export default angular.
+    .module('set', [])
+    .component('set', component);

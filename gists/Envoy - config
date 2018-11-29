@@ -1,0 +1,72 @@
+{
+    "listeners": [{
+        "address": "tcp://0.0.0.0:11120",
+        "filters": [{
+            "name": "http_connection_manager",
+            "config": {
+                "codec_type": "auto",
+                "stat_prefix": "swaggyprefix",
+                "rds": {
+                    "cluster": "rds",
+                    "route_config_name": "envoy-route",
+                    "refresh_delay_ms": 10000
+                },
+                "filters": [{
+                    "name": "router",
+                    "config": {}
+                }]
+            }
+        }]
+    }],
+    "lds": {
+        "cluster": "rds",
+        "refresh_delay_ms": 1000
+    },
+    "admin": {
+        "access_log_path": "/dev/null",
+        "address": "tcp://0.0.0.0:9001"
+    },
+    "cluster_manager": {
+        "clusters": [
+            {
+                "name": "rds",
+                "type": "strict_dns",
+                "connect_timeout_ms": 250,
+                "lb_type": "round_robin",
+                "hosts": [
+                    {
+                        "url": "tcp://172.18.0.1:8002"
+                    }
+                ]
+            }
+        ],
+        "sds": {
+            "cluster": {
+                "name": "sds",
+                "type": "strict_dns",
+                "connect_timeout_ms": 250,
+                "lb_type": "round_robin",
+                "hosts": [
+                    {
+                        "url": "tcp://172.18.0.1:8002"
+                    }
+                ]
+            },
+            "refresh_delay_ms": 1000
+        },
+        "cds": {
+            "cluster": {
+                "name": "cds",
+                "type": "strict_dns",
+                "connect_timeout_ms": 250,
+                "lb_type": "round_robin",
+                "hosts": [
+                    {
+                        "url": "tcp://172.18.0.1:8002"
+                    }
+                ]
+            },
+            "refresh_delay_ms": 1000
+        }
+    }
+}

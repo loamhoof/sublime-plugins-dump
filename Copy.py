@@ -4,13 +4,18 @@ import sublime_plugin
 
 class CopyTo(sublime_plugin.TextCommand):
     def run(self, edit, forward=True, cut=False):
-        start = self.view.sel()[0].b
-        end = self.view.find_by_class(start, forward, sublime.CLASS_LINE_END if forward else sublime.CLASS_LINE_START)
-        region = sublime.Region(start, end)
+        to = sublime.CLASS_LINE_END if forward else sublime.CLASS_LINE_START
 
-        to_copy = self.view.substr(region)
+        to_copy = []
 
-        sublime.set_clipboard(to_copy)
+        for sel in self.view.sel():
+            start = sel.b
+            end = self.view.find_by_class(start, forward, to)
+            region = sublime.Region(start, end)
 
-        if cut is True:
-            self.view.erase(edit, region)
+            to_copy.append(self.view.substr(region))
+
+            if cut is True:
+                self.view.erase(edit, region)
+
+        sublime.set_clipboard("\n".join(to_copy))

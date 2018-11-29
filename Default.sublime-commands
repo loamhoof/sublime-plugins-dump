@@ -2,5 +2,15 @@
 	{ "caption": "JQ: Run command", "command": "jq_panel" },
 	{ "caption": "JQ: Save state", "command": "jq_save_state" },
 	{ "caption": "JQ: Load state", "command": "jq_load_state" },
-	{ "caption": "Gist", "command": "select_gist" },
+    { "caption": "Gists", "command": "select_gist" },
+    { "caption": "Layout [Single]", "command": "set_layout", "args": {
+        "cols": [0.0, 1.0],
+        "rows": [0.0, 1.0],
+        "cells": [[0, 0, 1, 1]]
+    }},
+	{ "caption": "Layout [Columns: 2]", "command": "set_layout", "args": {
+        "cols": [0.0, 0.5, 1.0],
+        "rows": [0.0, 1.0],
+        "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }},
 ]

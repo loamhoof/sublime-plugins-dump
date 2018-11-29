@@ -1,0 +1,14 @@
+envoy:
+  container_name: envoy
+  image: envoyproxy/envoy
+  volumes:
+    - ./conf:/mnt
+  command:
+    - envoy
+    - -c
+    - /mnt/envoy.json
+    - --service-cluster
+    - envoy-cluster
+    - --service-node
+    - envoy-node
+  network_mode: host

@@ -2,7 +2,7 @@
 A place to dump all of those small, useless, handmade plugins
 
 ## Rename File
-Bind the `F2` key to renam the file.
+Bind the `F2` key to rename the file.
 
 ## Dashline
 Bind `ctrl+shift+keypad_minus` to add a line of `-` under the selected lines, matching the length of said lines.
@@ -62,3 +62,6 @@ Add a "Gist" command to quickly insert some gist.
 
 ## Reverse single selection
 Bind `shift+escape` to deselect every region except the last one.
+
+## Show folder
+Bind `shift+F2` to show the path of the folder the file is in.
