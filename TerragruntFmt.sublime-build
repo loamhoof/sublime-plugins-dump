@@ -1,0 +1,3 @@
+{
+    "shell_cmd": "/Users/soeren.medard/.local/bin/terragrunt hclfmt -terragrunt-hclfmt-file=${file}"
+}

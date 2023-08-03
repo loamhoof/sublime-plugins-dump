@@ -1,0 +1,166 @@
+[
+	// Rename File
+	{
+		"keys": [
+			"f2"
+		],
+		"command": "rename_file"
+	},
+	// Find Over Expand
+	{
+		"keys": [
+			"primary+shift+d"
+		],
+		"command": "find_over_expand"
+	},
+	{
+		"keys": [
+			"primary+alt+d"
+		],
+		"command": "duplicate_line"
+	},
+	// Group Navigation
+	{
+		"keys": [
+			"ctrl+tab"
+		],
+		"command": "change_view_in_group"
+	},
+	{
+		"keys": [
+			"ctrl+shift+tab"
+		],
+		"command": "change_view_in_group",
+		"args": {
+			"step": -1
+		}
+	},
+	// Unwrap
+	{
+		"keys": [
+			"ctrl+option+m"
+		],
+		"command": "unwrap"
+	},
+	// Batch view closing
+	{
+		"keys": [
+			"primary+shift+w"
+		],
+		"command": "close_views_in_group",
+		"args": {
+			"close_active": false
+		}
+	},
+	{
+		"keys": [
+			"primary+k",
+			"primary+w"
+		],
+		"command": "close_views_in_group"
+	},
+	{
+		"keys": [
+			"primary+k",
+			"shift+w"
+		],
+		"command": "close_views_in_window",
+		"args": {
+			"close_active": false
+		}
+	},
+	{
+		"keys": [
+			"primary+k",
+			"primary+shift+w"
+		],
+		"command": "close_views_in_window"
+	},
+	// Line splitting
+	{
+		"keys": [
+			"option+enter"
+		],
+		"command": "split_line"
+	},
+	// Go to pointer
+	{
+		"keys": [
+			"primary+k",
+			"primary+x"
+		],
+		"command": "go_to_pointer"
+	},
+	// Copy to
+	{
+		"keys": [
+			"primary+shift+c"
+		],
+		"command": "copy_to"
+	},
+	{
+		"keys": [
+			"primary+k",
+			"primary+shift+c"
+		],
+		"command": "copy_to",
+		"args": {
+			"forward": false
+		}
+	},
+	{
+		"keys": [
+			"primary+shift+x"
+		],
+		"command": "copy_to",
+		"args": {
+			"cut": true
+		}
+	},
+	{
+		"keys": [
+			"primary+k",
+			"primary+shift+x"
+		],
+		"command": "copy_to",
+		"args": {
+			"forward": false,
+			"cut": true
+		}
+	},
+	// Reverse single selection
+	{
+		"keys": [
+			"shift+escape"
+		],
+		"command": "reverse_single_selection",
+		"context": [
+			{
+				"key": "num_selections",
+				"operator": "not_equal",
+				"operand": 1
+			}
+		]
+	},
+	// Show Folder Path
+	{
+		"keys": [
+			"shift+f2"
+		],
+		"command": "show_folder"
+	},
+	// Go To EOF
+	{
+		"keys": [
+			"primary+shift+g"
+		],
+		"command": "go_to_eof"
+	},
+	// Prompt Recent Project or Workspace
+	{
+		"keys": [
+			"super+ctrl+shift+p"
+		],
+		"command": "prompt_open_recent_project_or_workspace"
+	},
+]

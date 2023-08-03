@@ -1,10 +1,8 @@
 import functools
-import functools
 import os.path
 
 import sublime
 import sublime_plugin
-
 
 PLUGIN_DIR = os.path.dirname(os.path.realpath(__file__))
 GISTS_DIR = os.path.join(PLUGIN_DIR, 'gists')
